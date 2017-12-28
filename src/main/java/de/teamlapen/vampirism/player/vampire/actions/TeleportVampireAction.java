@@ -27,7 +27,7 @@ public class TeleportVampireAction extends DefaultVampireAction {
 
     @Override
     public int getCooldown() {
-        return Balance.vpa.TELEPORT_COOLDOWN * 20;
+        return Balance.vpa.TELEPORT_COOLDOWN * 0;
     }
 
     @Override
