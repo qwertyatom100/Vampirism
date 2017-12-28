@@ -235,6 +235,7 @@ public class VampireSkills {
             }
         };
         speed.registerAttributeModifier(SharedMonsterAttributes.MOVEMENT_SPEED, "96dc968d-818f-4271-8dbf-6b799d603ad8", Balance.vps.SPEED_BOOST, 2);
+        ((VampirePlayer) player).getSpecialAttributes().setJumpBoost(Balance.vps.JUMP_BOOST + 1);
         SkillNode skill2 = new SkillNode(skill1, jump, speed);
 
         SkillNode skill3 = new SkillNode(skill2, new VampirismSkill.SimpleVampireSkill("1bloodvision", 176, 0, true) {
