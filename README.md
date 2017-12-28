@@ -1,6 +1,8 @@
 Vampirism for Minecraft 1.10 - Latest branch [![](http://cf.way2muchnoise.eu/short_233029_downloads.svg)](https://minecraft.curseforge.com/projects/vampirism-become-a-vampire)
 ============================================
 [![](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+### Status
+[![Build Status](https://travis-ci.org/qwertyatom100/Vampirism.png)](https://travis-ci.org/qwertyatom100/Vampirism)
 ## Mod Description
 
 Vampires are fast, strong and blood-thirsty entities, which do not like the sun, but don't fear the night, and the best thing is: You can become one!
