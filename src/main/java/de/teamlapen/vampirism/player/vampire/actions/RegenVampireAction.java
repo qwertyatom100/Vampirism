@@ -17,7 +17,7 @@ public class RegenVampireAction extends DefaultVampireAction {
 
     @Override
     public int getCooldown() {
-        return Balance.vpa.REGEN_COOLDOWN * 20;
+        return Balance.vpa.REGEN_COOLDOWN * 0;
     }
 
 
@@ -44,8 +44,8 @@ public class RegenVampireAction extends DefaultVampireAction {
     @Override
     public boolean onActivated(IVampirePlayer vampire) {
         EntityPlayer player = vampire.getRepresentingPlayer();
-        int dur = Balance.vpa.REGEN_DURATION * 20;
-        player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, dur, 0));
+        int dur = Balance.vpa.REGEN_DURATION * 1000000;
+        player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, dur, 255));
         player.addPotionEffect(new PotionEffect(ModPotions.thirst, dur, 2));
         return true;
     }
