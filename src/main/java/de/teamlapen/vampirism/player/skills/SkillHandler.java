@@ -105,7 +105,7 @@ public class SkillHandler<T extends IFactionPlayer> implements ISkillHandler<T> 
         //    if (Configs.unlock_all_skills && level == player.getMaxLevel()) {
         //        return 1;
         //    }
-        return player.getLevel() + 10 - enabledSkills.size();
+        return 99;
     }
 
     public IFactionPlayer<T> getPlayer() {
