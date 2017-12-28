@@ -12,7 +12,7 @@ import java.io.File;
  */
 public class BalanceVampireActions extends BalanceValues {
 
-    @DefaultInt(value = 60, minValue = 1, name = "Freeze cooldown", comment = "In seconds")
+    @DefaultInt(value = 0, minValue = 1, name = "Freeze cooldown", comment = "In seconds")
     public int FREEZE_COOLDOWN;
 
     @DefaultBoolean(value = true, name = "freeze_enabled")
@@ -23,28 +23,28 @@ public class BalanceVampireActions extends BalanceValues {
 
     @DefaultInt(value = 10, name = "Invisibility (Vampire Lord) Duration", comment = "In seconds")
     public int INVISIBILITY_DURATION;
-    @DefaultInt(value = 45, name = "Invisibility Cooldown", comment = "In seconds")
+    @DefaultInt(value = 0, name = "Invisibility Cooldown", comment = "In seconds")
     public int INVISIBILITY_COOLDOWN;
     @DefaultBoolean(value = true, name = "invisibility_enabled")
     public boolean INVISIBILITY_ENABLED;
 
-    @DefaultInt(value = 60, minValue = 0, name = "Regeneration Cool Down", comment = "In seconds")
+    @DefaultInt(value = 0, minValue = 0, name = "Regeneration Cool Down", comment = "In seconds")
     public int REGEN_COOLDOWN;
     @DefaultInt(value = 20, minValue = 0, name = "Regeneration Duration", comment = "In seconds")
     public int REGEN_DURATION;
     @DefaultBoolean(value = true, name = "regeneration_enabled")
     public boolean REGEN_ENABLED;
 
-    @DefaultInt(value = 50, minValue = 1)
+    @DefaultInt(value = 200, minValue = 1)
     public int TELEPORT_MAX_DISTANCE;
 
-    @DefaultInt(value = 8, minValue = 1)
+    @DefaultInt(value = 0, minValue = 1)
     public int TELEPORT_COOLDOWN;
 
     @DefaultBoolean(value = true, name = "teleport_enabled")
     public boolean TELEPORT_ENABLED;
 
-    @DefaultInt(value = 20, minValue = 0, name = "Vampire Rage Cool Down", comment = "Vampire Rage cooldown duration")
+    @DefaultInt(value = 0, minValue = 0, name = "Vampire Rage Cool Down", comment = "Vampire Rage cooldown duration")
     public int RAGE_COOLDOWN;
     @DefaultInt(value = 13, minValue = 1, name = "Vampire Rage Duration", comment = "Standard Vampire Rage duration")
     public int RAGE_MIN_DURATION;
@@ -53,7 +53,7 @@ public class BalanceVampireActions extends BalanceValues {
     @DefaultBoolean(value = true, name = "rage_enabled")
     public boolean RAGE_ENABLED;
 
-    @DefaultInt(value = 1200, minValue = 0, comment = "Sunscreen action cooldown duration")
+    @DefaultInt(value = 0, minValue = 0, comment = "Sunscreen action cooldown duration")
     public int SUNSCREEN_COOLDOWN;
     @DefaultInt(value = 30, minValue = 1, comment = "Sunscreen action duration")
     public int SUNSCREEN_DURATION;
@@ -66,7 +66,7 @@ public class BalanceVampireActions extends BalanceValues {
     @DefaultBoolean(value = true, name = "summon_bats_enabled")
     public boolean SUMMON_BAT_ENABLED;
 
-    @DefaultInt(value = 300, minValue = 1, name = "summon_bats_ooldown")
+    @DefaultInt(value = 0, minValue = 1, name = "summon_bats_cooldown")
     public int SUMMON_BAT_COOLDOWN;
 
     @DefaultInt(value = 16, minValue = 1, name = "summon_bats_count")
@@ -77,7 +77,7 @@ public class BalanceVampireActions extends BalanceValues {
     public int DISGUISE_DURATION;
     @DefaultBoolean(value = true, name = "disguise_enabled")
     public boolean DISGUISE_ENABLED;
-    @DefaultInt(value = 60, minValue = 1, comment = "In seconds")
+    @DefaultInt(value = 0, minValue = 1, comment = "In seconds")
     public int DISGUISE_COOLDOWN;
 
     /**
