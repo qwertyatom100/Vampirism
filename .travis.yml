@@ -1,5 +1,3 @@
-#sudo: required
-
 language: java
 jdk:
   - oraclejdk8
@@ -17,6 +15,6 @@ cache:
 
 before_install: chmod +x gradlew
 install:
-  - ./gradlew setupCIWorkspace -S
+  - ./gradlew setupCIWorkspace
 script:
   - ./gradlew build
