@@ -26,7 +26,7 @@ public class FreezeVampireAction extends DefaultVampireAction {
 
     @Override
     public int getCooldown() {
-        return Balance.vpa.FREEZE_COOLDOWN * 20;
+        return Balance.vpa.FREEZE_COOLDOWN * 0;
     }
 
 

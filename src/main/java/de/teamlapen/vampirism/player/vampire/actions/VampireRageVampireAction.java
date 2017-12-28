@@ -20,7 +20,7 @@ public class VampireRageVampireAction extends DefaultVampireAction implements IL
 
     @Override
     public int getCooldown() {
-        return Balance.vpa.RAGE_COOLDOWN * 20;
+        return Balance.vpa.RAGE_COOLDOWN * 0;
     }
 
     @Override

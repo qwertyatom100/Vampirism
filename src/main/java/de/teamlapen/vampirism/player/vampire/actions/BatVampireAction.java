@@ -67,7 +67,7 @@ public class BatVampireAction extends DefaultVampireAction implements ILastingAc
 
     @Override
     public int getCooldown() {
-        return 1;
+        return 0;
     }
 
     @Override

@@ -17,7 +17,7 @@ public class DisguiseVampireAction extends DefaultVampireAction implements ILast
 
     @Override
     public int getCooldown() {
-        return Balance.vpa.DISGUISE_COOLDOWN * 20;
+        return Balance.vpa.DISGUISE_COOLDOWN * 0;
     }
 
     @Override

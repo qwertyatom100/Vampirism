@@ -24,7 +24,7 @@ public class SummonBatVampireAction extends DefaultVampireAction {
 
     @Override
     public int getCooldown() {
-        return Balance.vpa.SUMMON_BAT_COOLDOWN * 20;
+        return Balance.vpa.SUMMON_BAT_COOLDOWN * 0;
     }
 
     @Override

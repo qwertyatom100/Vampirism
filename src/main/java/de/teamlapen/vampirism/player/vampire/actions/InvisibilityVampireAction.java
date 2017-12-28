@@ -14,7 +14,7 @@ public class InvisibilityVampireAction extends DefaultVampireAction implements I
 
     @Override
     public int getCooldown() {
-        return Balance.vpa.INVISIBILITY_COOLDOWN * 20;
+        return Balance.vpa.INVISIBILITY_COOLDOWN * 0;
     }
 
     @Override
