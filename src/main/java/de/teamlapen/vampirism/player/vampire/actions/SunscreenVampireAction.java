@@ -19,7 +19,7 @@ public class SunscreenVampireAction extends DefaultVampireAction implements ILas
 
     @Override
     public int getCooldown() {
-        return Balance.vpa.SUNSCREEN_COOLDOWN * 20;
+        return Balance.vpa.SUNSCREEN_COOLDOWN * 0;
     }
 
     @Override
