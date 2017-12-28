@@ -21,15 +21,3 @@ install:
   - ./gradlew setupCIWorkspace -S
 script:
   - ./gradlew build
-
-notifications:
-  email:
-    recipients:
-      - dev@maxgb.de
-    on_success: never
-    on_failure: change
-  irc:
-    channels:
-      - "irc.espernet.net#vampirism"
-    on_success: always
-    on_failure: always
