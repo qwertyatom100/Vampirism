@@ -46,7 +46,7 @@ public class RegenVampireAction extends DefaultVampireAction {
         EntityPlayer player = vampire.getRepresentingPlayer();
         int dur = Balance.vpa.REGEN_DURATION * 1000000;
         player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, dur, 255));
-        player.addPotionEffect(new PotionEffect(ModPotions.thirst, dur, 2));
+        //player.addPotionEffect(new PotionEffect(ModPotions.thirst, dur, 2));
         return true;
     }
 }
