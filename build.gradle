@@ -39,7 +39,6 @@ def loadProperties() {
 apply from: 'gradle/versioning.gradle'
 apply from: 'gradle/forge.gradle'
 apply from: 'gradle/dev.gradle'
-apply from: 'gradle/deploy.gradle'
 
 sourceSets
         {
