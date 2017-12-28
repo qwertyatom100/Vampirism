@@ -2,10 +2,6 @@ language: java
 
 jdk: oraclejdk8
 
-addons:
-  artifacts:
-    working_dir: build/libs
-
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
@@ -16,8 +12,13 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-before_install: chmod +x gradlew
+before_install:
+  - chmod +x gradlew
+  - curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/master/install | bash
+
 install:
   - ./gradlew setupCIWorkspace -S
 script:
   - ./gradlew build
+
+after_success: artifacts upload
